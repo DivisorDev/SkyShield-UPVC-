@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amroha UPVC & Glass Solutions</title>
+
+<style>
+:root{
+  --main:#0b3c5d;
+  --accent:#1e90ff;
+  --light:#f4f6f8;
+  --dark:#1a1a1a;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{color:#333;background:#fff}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--main),var(--accent));
+  color:#fff;
+  padding:25px 15px;
+}
+
+.header-box{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.owner{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.owner img{
+  width:65px;
+  height:65px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid #fff;
+}
+
+.company h1{font-size:28px}
+.company p{opacity:.9}
+
+/* NAV */
+nav{
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+nav a{
+  padding:15px 20px;
+  text-decoration:none;
+  color:#000;
+  font-weight:500;
+}
+
+nav a:hover{color:var(--accent)}
+
+/* HERO */
+.hero{
+  padding:90px 20px;
+  background:
+  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url("images/gallery1.jpg") center/cover;
+  color:#fff;
+  text-align:center;
+}
+
+.hero h2{font-size:40px}
+.hero p{max-width:800px;margin:15px auto;line-height:1.7}
+
+.hero a{
+  display:inline-block;
+  margin:10px;
+  padding:14px 34px;
+  background:var(--accent);
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section{
+  padding:70px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+section h2{
+  text-align:center;
+  color:var(--main);
+  margin-bottom:40px;
+}
+
+/* ABOUT */
+.about p{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  line-height:1.9;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.service{
+  background:var(--light);
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  transition:.3s;
+}
+
+.service:hover{transform:translateY(-6px)}
+.service h3{color:var(--accent);margin-bottom:10px}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* CATALOGUE */
+.catalogue{
+  text-align:center;
+}
+
+.catalogue a{
+  display:inline-block;
+  margin-top:20px;
+  padding:16px 40px;
+  background:var(--main);
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* CONTACT */
+.contact{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.contact div{
+  background:var(--light);
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+/* FLOAT BUTTONS */
+.call,.whatsapp{
+  position:fixed;
+  right:20px;
+  color:#fff;
+  padding:16px;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:20px;
+}
+
+.call{bottom:90px;background:#007bff}
+.whatsapp{bottom:25px;background:#25D366}
+</style>
+</head>
+
+<body>
+
+<!-- ===== EDIT DETAILS HERE ONLY ===== -->
+<script>
+const PHONE = "+91 9999999999";
+const TEL = "919999999999";
+const WHATSAPP = "919999999999";
+const EMAIL = "yourcompany@email.com";
+const ADDRESS = "Amroha, Uttar Pradesh, India";
+</script>
+<!-- ================================= -->
+
+<header>
+  <div class="header-box">
+    <div class="company">
+      <h1>Amroha UPVC & Glass Solutions</h1>
+      <p>UPVC • Glass • Aluminium Work</p>
+    </div>
+    <div class="owner">
+      <img src="images/owner.jpg">
+      <div>
+        <strong>Owner: Mohd. Qasim</strong><br>
+        <small>10+ Years Experience<br>Quality & Honest Work</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Products</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#catalogue">Catalogue</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h2>Premium UPVC & Glass Solutions</h2>
+  <p>
+    Manufacturing & Installation of UPVC Windows, Doors,
+    Toughened Glass, Sliding Systems & Aluminium Work
+  </p>
+  <a id="callBtn">📞 Call Now</a>
+  <a id="waBtn">💬 WhatsApp</a>
+</div>
+
+<section id="about" class="about">
+  <h2>About Our Company</h2>
+  <p>
+    We are a trusted UPVC & Glass company delivering strong,
+    stylish and long-lasting solutions for residential and
+    commercial projects with professional installation.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Our Products & Services</h2>
+  <div class="services">
+    <div class="service"><h3>UPVC Windows</h3><p>Noise resistant & energy efficient.</p></div>
+    <div class="service"><h3>UPVC Doors</h3><p>Secure & modern designs.</p></div>
+    <div class="service"><h3>Sliding Systems</h3><p>Smooth & durable sliding solutions.</p></div>
+    <div class="service"><h3>Toughened Glass</h3><p>High strength safety glass.</p></div>
+    <div class="service"><h3>Glass Partitions</h3><p>Office & commercial partitions.</p></div>
+    <div class="service"><h3>Aluminium Work</h3><p>Custom aluminium solutions.</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Our Work Gallery</h2>
+  <div class="gallery">
+    <img src="images/gallery1.jpg">
+    <img src="images/gallery2.jpg">
+    <img src="images/gallery3.jpg">
+    <img src="images/gallery4.jpg">
+    <img src="images/gallery5.jpg">
+    <img src="images/gallery6.jpg">
+    <img src="images/gallery7.jpg">
+  </div>
+</section>
+
+<section id="catalogue" class="catalogue">
+  <h2>Product Catalogue</h2>
+  <p>Download our complete UPVC & Glass product catalogue</p>
+  <a href="catalogue/upvc-glass-catalogue.pdf" target="_blank">📂 Download Catalogue</a>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <div><h3>Phone</h3><p id="phone"></p></div>
+    <div><h3>Email</h3><p id="email"></p></div>
+    <div><h3>Address</h3><p id="address"></p></div>
+  </div>
+</section>
+
+<footer>
+  <p>© All Rights Reserved – Amroha UPVC & Glass Solutions</p>
+  <small>Designed & Developed by Divisor Studio</small>
+</footer>
+
+<a class="call" id="callFloat">📞</a>
+<a class="whatsapp" id="waFloat">💬</a>
+
+<script>
+phone.innerText = PHONE;
+email.innerText = EMAIL;
+address.innerText = ADDRESS;
+
+callBtn.href = callFloat.href = "tel:"+TEL;
+waBtn.href = waFloat.href =
+`https://wa.me/${WHATSAPP}?text=Hello%20I%20need%20UPVC%20and%20Glass%20work`;
+</script>
+
+</body>
+</html>
